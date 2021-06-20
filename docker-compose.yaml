@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  flask-test:
+    build:
+      context: ./
+    volumes:
+      - ./:/var/www/app/
+    ports:
+      - "80:80"
